@@ -17,8 +17,7 @@
 }
 
 .container{
-  width: 1024px;
-  margin: 0 auto;
+  
   padding-bottom: 50px;
 }
 .nav{
@@ -58,30 +57,33 @@
   font-size:16px;
 }
 
-button.button{
+
+.button.button {
   padding: 15px 100px;
-  background-color: rgb(20, 20, 20);
-  color:#fff;
-  border-style:none;
   margin-top: 50px;
-  
+	background-image: linear-gradient(to right, rgb(7 6 6) 50%, #c30010 50%);
+	background-position: 0 0;
+	background-size: 200% auto;
+	transition: .3s;
+	color: #fff;
 }
-
-button.button:hover{
-  background-color:rgb(58, 58, 58);
-  color: #fff;
+.button.button:hover {
+	background-position: -100% 0;
+	color: #fff;
 }
-
 #FIELD{
   background-color: rgb(233, 233, 233);
 }
 
 
 
+
+
+
+
 .production {
   float: left;
-  width: 250px;
-  margin: 40px 50px 0 0;
+  margin: 30px;
   background-color:#fff;
   background-size: cover;
   background-position: center;
@@ -95,19 +97,21 @@ button.button:hover{
   margin:20px;
   height:150px;
 }
+
+
 .production-btn{
   width:100%;
   height:50px;
-  background-color: rgb(20, 20, 20);
-  color:#fff;
-  align-items: flex-end;
-  
+	background-image: linear-gradient(to right, rgb(7 6 6) 50%, #c30010 50%);
+	background-position: 0 0;
+	background-size: 200% auto;
+	transition: .3s;
+	color: #fff;
 }
-.production-btn:hover{
-  background-color:rgb(58, 58, 58);
-  color: #fff;
+.production-btn:hover {
+	background-position: -100% 0;
+	color: #fff;
 }
-
 
 .blog-group {
   width: 920px;
@@ -128,17 +132,21 @@ button.button:hover{
   height: 150px;
 }
 
-.blog-btn{
+.blog-btn {
   width:100%;
   height:50px;
-  background-color: #fff;
-  color:black;
-  align-items: flex-end;
+	background-image: linear-gradient(to right, rgb(7 6 6) 50%, #c30010 50%);
+	background-position: 0 0;
+	background-size: 200% auto;
+	transition: .3s;
+	color: #fff;
 }
-.blog-btn:hover{
-  background-color:rgb(58, 58, 58);
-  color: #fff;
+.blog-btn:hover {
+	background-position: -100% 0;
+	color: #fff;
 }
+
+
 .blog.bg-3{
   border-right: solid 3px #d1d1d1;
 }
@@ -146,7 +154,10 @@ button.button:hover{
   height:100px;
 }
 
-
+#map{
+  height:500px;
+  width:100%;
+}
 
 .footer {
   width: 100%;
