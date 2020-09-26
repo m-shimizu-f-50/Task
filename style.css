@@ -19,6 +19,7 @@
 .container{
   width: 1024px;
   margin: 0 auto;
+  padding-bottom: 50px;
 }
 .nav{
   float: right;
@@ -63,7 +64,7 @@ button.button{
   color:#fff;
   border-style:none;
   margin-top: 50px;
-  margin-bottom: 100px;
+  
 }
 
 button.button:hover{
@@ -76,11 +77,6 @@ button.button:hover{
 }
 
 
-.production-group {
-  width: 920px;
-  padding: 30px 0 90px 0;
-  margin: 0 auto;
-}
 
 .production {
   float: left;
@@ -105,6 +101,7 @@ button.button:hover{
   background-color: rgb(20, 20, 20);
   color:#fff;
   align-items: flex-end;
+  
 }
 .production-btn:hover{
   background-color:rgb(58, 58, 58);
@@ -112,6 +109,42 @@ button.button:hover{
 }
 
 
+.blog-group {
+  width: 920px;
+  padding: 30px 0 90px 0;
+  margin: 0 auto;
+}
+
+.blog {
+  
+  padding: 50px;
+  background-color: #fff;
+  background-size: cover;
+  background-position: center;
+  border-left: solid 3px #d1d1d1;
+}
+.blog-image{
+  width:100%;
+  height: 150px;
+}
+
+.blog-btn{
+  width:100%;
+  height:50px;
+  background-color: #fff;
+  color:black;
+  align-items: flex-end;
+}
+.blog-btn:hover{
+  background-color:rgb(58, 58, 58);
+  color: #fff;
+}
+.blog.bg-3{
+  border-right: solid 3px #d1d1d1;
+}
+.blog-title{
+  height:100px;
+}
 
 
 
