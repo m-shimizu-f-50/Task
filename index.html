@@ -15,11 +15,32 @@
   <title>Task</title>
 </head>
 <body>
+  <!-- <div class="header">
+    <div class="logo">SITE NAME</div>
+    <a class="nav-button " href="#">
+      <span></span>
+      <span></span>
+      <span></span>
+    </a>
+    <nav class="nav-wrap">
+      <ul class="nav">
+        <li><a href="#">ABOUT</a></li>
+        <li><a href="#">SERVICE</a></li>
+        <li><a href="#">BLOG</a></li>
+        <li><a href="#">CONTACT</a></li>
+      </ul>
+    </nav>
+  </div> -->
   <div class="header">
       <h1>
         <img class="logo" src="img/logo.png">
       </h1>
-      <nav>
+      <a class="nav-button " href="#">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+      <nav class="nav-wrap">
         <ul class="nav">
           <li class="nav-list"><a href="#">ABOUT US</a></li>
           <li class="nav-list"><a href="#">FIELD</a></li>
@@ -27,13 +48,14 @@
           <li class="nav-list"><a href="#">BLOG</a></li>
           
         </ul>
+        <!-- <div class="mail">
+          <img class="mail-logo" src="img/mail.png">
+        </div>
+        <div class="tel">
+          <span class="telephone">09-9999-9999</span>
+        </div> -->
       </nav>
-      <div class="mail">
-        <img class="mail-logo" src="img/mail.png">
-      </div>
-      <div class="tel">
-        <span class="telephone">09-9999-9999</span>
-      </div>
+      
       
   </div>
   
@@ -126,7 +148,7 @@
       <h2 class="heading inview fadeIn_up">BLOG</h2>
       <div class="col-md-4">
         <div class="blog bg-1 inview fadeIn_up">
-          <div class="blog-type">コラム/全般</div>
+          <div class="blog-general">コラム/全般</div>
           <span class="date">2017.02.03</span>
           <img class="blog-image" src="img/pexels-andrea-piacquadio-3820132.jpg">
           <h4 class="blog-title">1万円もらえます。「子育て世帯臨時特例給付金」を取りに行こう！</h4>
@@ -138,7 +160,7 @@
       </div>
       <div class="col-md-4">
         <div class="blog bg-2 inview fadeIn_up">
-          <div class="blog-type">個人の節税</div>
+          <div class="blog-tax">個人の節税</div>
           <span class="date">2017.02.03</span>
           <img class="blog-image" src="img/pexels-pixabay-209224.jpg">
           <h4 class="blog-title">法人化して消費税の節税対策！２年間の免税期間を活用する</h4>
@@ -150,7 +172,7 @@
       </div>
       <div class="col-md-4">
         <div class="blog bg-3 inview fadeIn_up">
-          <div class="blog-type">会社設立</div>
+          <div class="blog-company">会社設立</div>
           <span class="date">2017.02.03</span>
           <img class="blog-image" src="img/pexels-fauxels-3182759.jpg">
           <h4 class="blog-title">外国人の株式会社設立</h4>
@@ -198,6 +220,23 @@
                   }
               });
           });
+      });
+    </script>
+    <script>
+      $(function() {
+        $(".nav-button").on("click", function() {
+          if ($(this).hasClass("active")) {
+            $(this).removeClass("active");
+            $(".nav-wrap")
+              .addClass("close")
+              .removeClass("open");
+          } else {
+            $(this).addClass("active");
+            $(".nav-wrap")
+              .addClass("open")
+              .removeClass("close");
+          }
+        });
       });
     </script>
   </div>
