@@ -3,8 +3,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-
 .header { 
   width: 80%;
   height: 80px;
@@ -19,6 +17,119 @@
   left: 10%;
   
 }
+
+.nav-wrap.open {
+  display: block;
+}
+.nav-wrap.close {
+  display: none;
+}
+@media screen and (min-width: 981px) {
+  .nav-wrap {
+    display: block !important;
+  }
+}
+@media screen and (max-width: 980px) {
+  .nav-button {
+    display: block;
+    cursor: pointer;
+  }
+.nav-wrap {
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: none;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.9);
+  width: 100%;
+  height: 100%
+}
+.nav {
+  height: 100%;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.nav-wrap nav{
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+li {
+  display: block;
+  margin: 2em;
+}
+a {
+  color: #fff;
+  font-size: 18px;
+}
+    
+  
+  /*メニューボタン*/
+  .nav-button,
+  .nav-button span {
+    display: inline-block;
+    transition: all 0.4s;
+    box-sizing: border-box;
+  }
+  .nav-button {
+    z-index: 20;
+    position: fixed;
+    width: 40px;
+    height: 36px;
+    right: 15%;
+  }
+  
+
+  .nav-button span {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: black;
+    border-radius: 4px;
+  }
+  .nav-button span:nth-of-type(1) {
+    top: 0;
+  }
+  .nav-button span:nth-of-type(2) {
+    top: 16px;
+  }
+  .nav-button span:nth-of-type(3) {
+    bottom: 0;
+  }
+  .nav-button.active span:nth-of-type(1) {
+    -webkit-transform: translateY(16px) rotate(-45deg);
+    transform: translateY(16px) rotate(-45deg);
+  }
+  .nav-button.active span:nth-of-type(2) {
+    opacity: 0;
+  }
+  .nav-button.active span:nth-of-type(3) {
+    -webkit-transform: translateY(-16px) rotate(45deg);
+    transform: translateY(-16px) rotate(45deg);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .logo{
   margin:10px 0 20px 20px;
   text-align:center;
@@ -186,11 +297,27 @@ nav {
   width:100%;
   height: 150px;
 }
-.blog-type{
+.blog-general{
   padding: 5px;
   margin-bottom: 10px;
   float: left;
-  background-color: pink;
+  background-color: rgb(255, 168, 38);
+  color:#fff;
+  font-weight:  bold;
+}
+.blog-tax{
+  padding: 5px;
+  margin-bottom: 10px;
+  float: left;
+  background-color: rgb(243, 7, 231);
+  color:#fff;
+  font-weight:  bold;
+}
+.blog-company{
+  padding: 5px;
+  margin-bottom: 10px;
+  float: left;
+  background-color: rgb(7, 188, 243);
   color:#fff;
   font-weight:  bold;
 }
